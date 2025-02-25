@@ -8,7 +8,7 @@ html, body {
     width: 100%;
     height: 100vh;
     font-family: 'Georgia', serif;
-    background-color:burlywood; 
+    background-color:rgb(216, 222, 135); 
     color: #333; 
     display: flex;
     justify-content: center;
