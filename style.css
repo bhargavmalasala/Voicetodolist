@@ -1,72 +1,133 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     width: 100%;
-    height: 100%;
-    font-family: Product Sans;
+    height: 100vh;
+    font-family: 'Georgia', serif; /* Classic serif font */
+    background-color:burlywood; /* Light gray for the body */
+    color: #333; /* Dark gray for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#main{
-    width: 100%;
-    height: 100%;
+#main {
+    width: 50%; /* Slightly narrower for elegance */
+    height: auto;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    border: 1px solid #ccc; /* Subtle border */
+    background-color: #ffffff86; /* Pure white for the main container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-#taskinput{
-    width: 200px;
-    height: 30px;
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue-gray for heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+label {
+    font-size: 1.2rem;
+    color: #2c3e50; /* Dark blue-gray for label */
+    margin-bottom: 10px;
+}
+
+.taskbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#taskinput {
+    width: 250px;
+    height: 40px;
     font-size: 16px;
-    padding-left: 5px;
+    padding-left: 10px;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    transition: border-color 0.3s ease;
 }
 
-button{
+#taskinput:focus {
+    border-color: #3498db; /* Blue border on focus */
+    outline: none;
+}
+
+button {
     padding: 0px 0px;
-    height: 30px;
+    height: 40px;
     width: 100px;
-    background-color: rgb(15, 221, 15);
+    background-color: #3498db; /* Soft blue for buttons */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, background-color 0.2s ease;
+    font-size: 16px;
+    color: white;
 }
-button:active{
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+button:active {
     transform: scale(0.9);
 }
 
-.tasklist{
+.tasklist {
     list-style-type: none;
     padding: 0px;
+    width: 100%;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
-ul li{
+ul li {
     display: flex;
     justify-content: space-between;
-    width: 700px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     align-items: center;
-    height: 50px;
-}
-li button{
-    padding-right: 10px;
-}
-li span{
-    padding-left: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light gray background for list items */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.del{
-    background-color: red;
+ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+li span {
+    padding-left: 10px;
+    font-size: 18px;
+    color: #333; /* Dark gray text */
+}
+
+.del {
+    background-color: #e74c3c; /* Red for delete button */
+    color: white;
+}
+
+.del:hover {
+    background-color: #c0392b; /* Darker red on hover */
 }
