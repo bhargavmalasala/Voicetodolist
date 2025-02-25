@@ -7,16 +7,16 @@
 html, body {
     width: 100%;
     height: 100vh;
-    font-family: 'Georgia', serif; /* Classic serif font */
-    background-color:burlywood; /* Light gray for the body */
-    color: #333; /* Dark gray for text */
+    font-family: 'Georgia', serif;
+    background-color:burlywood; 
+    color: #333; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #main {
-    width: 50%; /* Slightly narrower for elegance */
+    width: 50%; 
     height: auto;
     padding: 40px;
     display: flex;
@@ -24,22 +24,22 @@ html, body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 1px solid #ccc; /* Subtle border */
-    background-color: #ffffff86; /* Pure white for the main container */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid #ccc;
+    background-color: #ffffff86; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
 }
 
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2c3e50; /* Dark blue-gray for heading */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    color: #2c3e50; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 label {
     font-size: 1.2rem;
-    color: #2c3e50; /* Dark blue-gray for label */
+    color: #2c3e50; 
     margin-bottom: 10px;
 }
 
@@ -54,15 +54,15 @@ label {
     height: 40px;
     font-size: 16px;
     padding-left: 10px;
-    border: 1px solid #ddd; /* Subtle border */
+    border: 1px solid #ddd; 
     border-radius: 5px;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333; /* Dark gray text */
+    background-color: #f9f9f9;
+    color: #333; 
     transition: border-color 0.3s ease;
 }
 
 #taskinput:focus {
-    border-color: #3498db; /* Blue border on focus */
+    border-color: #3498db; 
     outline: none;
 }
 
@@ -70,7 +70,7 @@ button {
     padding: 0px 0px;
     height: 40px;
     width: 100px;
-    background-color: #3498db; /* Soft blue for buttons */
+    background-color: #3498db; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -80,7 +80,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9; /* Darker blue on hover */
+    background-color: #2980b9; 
 }
 
 button:active {
@@ -105,29 +105,29 @@ ul li {
     align-items: center;
     width: 100%;
     padding: 10px;
-    background-color: #f9f9f9; /* Light gray background for list items */
-    border: 1px solid #ddd; /* Subtle border */
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 ul li:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
 li span {
     padding-left: 10px;
     font-size: 18px;
-    color: #333; /* Dark gray text */
+    color: #333; 
 }
 
 .del {
-    background-color: #e74c3c; /* Red for delete button */
+    background-color: #e74c3c; 
     color: white;
 }
 
 .del:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b; 
 }
