@@ -18,7 +18,9 @@ if ("SpeechRecognition" in window || "webkitSpeechRecognition" in window) {
   };
 
   taskinput.addEventListener("keydown", (event) => {
-    if (event.keyCode === 13) {
+    if (event.key === "Enter") {
+      console.log("Enter key pressed.");
+      event.preventDefault();
       addtask();
     }
   });
