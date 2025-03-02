@@ -1,22 +1,30 @@
 if ("SpeechRecognition" in window || "webkitSpeechRecognition" in window) {
   let recognition = new (window.SpeechRecognition ||
     window.webkitSpeechRecognition)();
-  let taskinput = document.querySelector("#taskinput");
+
+    let taskinput = document.querySelector("#taskinput");
 
   let tasklist = document.querySelector(".tasklist");
 
   taskinput.addEventListener("focus", () => {
+
     recognition.start();
-  });
+
+});
 
   recognition.onresult = (event) => {
+
     let translate = event.results[0][0].transcript;
+
     taskinput.value = translate;
     addtask();
-  };
+
+};
 
   function addtask() {
+
     let tasktext = taskinput.value.trim();
+
     if (tasktext != "") {
       let taskitem = document.createElement("li");
       taskitem.innerHTML = `
@@ -40,10 +48,13 @@ if ("SpeechRecognition" in window || "webkitSpeechRecognition" in window) {
   function savedata() {
     localStorage.setItem("data", tasklist.innerHTML);
   }
+
   function showTask() {
     tasklist.innerHTML = localStorage.getItem("data");
   }
-  showTask();
-} else {
+  showTask();  
+} 
+
+else {
   alert("Your browser doesn't support speech recognition");
 }
